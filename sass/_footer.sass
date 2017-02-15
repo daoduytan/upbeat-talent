@@ -1,0 +1,103 @@
+.footer 
+	clear: both
+	background: #fff
+	padding-top: 30px
+
+	ul 
+		list-style: none
+		margin: 0
+		padding: 0
+
+	&_title 
+		margin: 0 0 30px
+		color: $yellow
+		font:
+			size: 14px
+			weight: 600
+		text:
+			transform: uppercase
+
+	&_top 
+		label 
+			display: block
+			color: $gray
+			font:
+				size: 14px
+				weight: 600
+		input[type="text"], textarea 
+			display: block
+			width: 100%
+			background: #fafafa
+			border: none
+
+		input[type="text"]
+			height: 32px
+			padding:
+				left: 15px
+
+		textarea 
+			height: 105px
+			padding: 7px 10px 7px 15px
+			resize: none
+
+		button[type="submit"]
+			min-width: 190px
+			height: 32px
+			background: #fff
+			border: 1px solid $gray
+			color: $gray
+			text-transform: uppercase
+			font:
+				weight: 600
+			-webkit-border-radius: 16px
+			-moz-border-radius: 16px
+			border-radius: 16px
+			margin-top: 15px
+			
+			&:hover 
+				background: $yellow
+				border-color: $yellow
+				color: #fff
+
+
+	&_add 
+		ul 
+
+			li
+				position: relative 
+				border-bottom: 1px solid #fafafa
+				margin-left: 60px
+				color: #666
+
+				.icon 
+					+position(absolute, 5px null null -60px)
+
+		h4 
+			color: $gray
+			margin-bottom: 5px
+			font:
+				size: 14px
+				weight: 600
+
+	&_contact 
+		.row
+			margin:
+				left: -5px
+				right: -5px
+
+		.col-sm-6 
+			padding:
+				left: 5px
+				right: 5px
+			p 
+				margin-bottom: 15px
+
+	&_bottom 
+		background: #fafafa
+		text-transform: uppercase
+		padding: 10px 0
+		margin-top: 35px
+		font:
+			size: 12px
+			weight: 600
+		letter-spacing: 2px

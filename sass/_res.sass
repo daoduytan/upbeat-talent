@@ -1,0 +1,367 @@
+@media (min-width: 768px) 
+	.header 
+		.btn-nav 
+			display: none
+
+		&_wrap 	
+			position: relative
+	
+		.search-form
+			+position(absolute, 0 0 0 0)
+			+size(0 70px)
+			opacity: 0
+			visibility: hidden
+			background: #fff
+			padding-top: 18px
+			margin: auto
+			-webkit-transition: opacity .1s, width .3s
+			-moz-transition: opacity .1s, width .3s
+			transition: opacity .1s, width .3s
+
+			button, input 
+				border: none
+				background
+				box-shadow: none
+				background: #fff
+
+			button 
+				&:focus 
+					outline: none
+
+			&.showSearch 
+				width: 100%
+				opacity: 1
+				visibility: visible
+
+
+
+	.main-nav 
+		ul.menu
+			li 
+				a 
+					height: 70px
+					line-height: 70px
+					&:after 
+						content: ""
+						display: block
+						+size(0 2px)
+						+position(null null 2px null)
+						background: #F0618D
+						margin: auto
+						-webkit-transition: width .2s ease-in-out
+						-moz-transition: width .2s ease-in-out
+						transition: width .2s ease-in-out
+
+					&:hover
+						color: #F0618D
+						&:after 
+							width: 100% 
+	.home-notice-top 
+		width: 100%
+		display: table
+		.img-top, .caption-top 
+			display: table-cell
+			height: 100%
+	
+		.caption-top 
+			width: 53%
+			position: relative
+
+			&:before 
+				content: ""
+				height: 90%
+				width: calc(100% + 30px)
+				// +size(60% 90%)
+				display: block
+				border: 2px solid $yellow
+				border-right: none
+				+position(absolute, 50% 0 null null)
+				-webkit-transform: translateY(-50%)
+				-moz-transform: translateY(-50%)
+				transform: translateY(-50%)
+			
+			&-inner 
+				+size(95% 80%)
+				background: #eef6f9
+				padding: 80px 60px 50px 140px
+				+position(absolute, 50% null null -60px)
+				-webkit-transform: translateY(-50%)
+				-moz-transform: translateY(-50%)
+				transform: translateY(-50%)
+
+@media (min-width: 992px)
+	.footer_contact
+		margin-left: 120px
+
+@media (max-width: 1400px) 
+	.home-eshop .slider-eshop:before
+		right: 75%
+		width: 25%
+
+@media (max-width: 1199px) 
+	.box-talent .caption 
+		margin-left: 215px
+		width: 145px
+		header 
+			h3
+				font:
+					size: 18px
+			span 
+				font:
+					size: 12px
+		p
+			font:
+				size: 12px
+	.home-notice-top .caption-top-inner
+		padding: 30px 15px 30px 80px
+		min-width: 567px
+
+		p
+			margin-bottom: 20px
+
+	.home-notice-bottom .inner-notice-child .caption-child
+		h3
+			font:
+				size: 13px
+		p 
+			font:
+				size: 12px
+
+	.home-eshop .section_home-main::before
+		max-width: 100%
+		left: 0
+		margin: 0
+		border:
+			right: none
+			left: none
+
+	.slider-eshop
+		.container 
+			width: 100% !important
+
+	.slider-multimedia .multimedia-item .inner::before
+		+size(50px 50px)
+
+		margin:
+			top: -25px
+			left: -25px
+
+
+@media (min-width: 992px) and (max-width: 1199px) 
+	.home-notice-bottom .inner-notice-child .caption-child
+		padding: 10px
+
+@media (max-width: 1024px) 
+	.home-eshop .slider-eshop .img 
+		img 
+			margin-left: -50px
+
+@media (max-width: 991px)
+	.home-notice-bottom
+		margin: 20px 0 0
+
+		.inner-notice-child 
+			margin-bottom: 20px
+
+	.home-notice-top .caption-top-inner	
+		min-width: 450px
+		padding: 10px 10px 10px 80px
+
+		h3 
+			font:
+				size: 15px
+			margin-bottom: 5px
+
+			&:before 
+				width: 30px
+				left: -50px
+				top: 15px
+		span 
+			font-size: 10px
+		p 
+			font-size: 12px
+			margin-bottom: 10px
+
+@media (min-width: 480px) and (max-width: 767px) 
+	.home-notice-bottom .inner-notice-child .img-child
+		width: 50%
+	
+@media (max-width: 767px) 
+	
+	.header 
+		.search-form
+			// background:blue
+			// border: 1px solid #eee
+			margin: 15px
+
+			input, button 
+				border: 1px solid #eee
+				box-shadow: none
+				border-radius: 0
+
+		.btn-nav 
+			text-align: right
+			font-size: 20px
+
+			span 
+				cursor: pointer
+
+		.main-nav
+			display: none
+			-webkit-box-shadow: 0px 19px 30px -8px rgba(0,0,0,.1)
+			-moz-box-shadow: 0px 19px 30px -8px rgba(0,0,0,.1)
+			box-shadow: 0px 19px 30px -8px rgba(0,0,0,.1)
+			&.showMenu
+				display: block
+				border-top: 1px solid #eee
+				+position(absolute, 100% 0 null 0)
+				+size(100% null)			
+				z-index: 9999
+				background: #fff
+				text-align: center
+
+				.menu, .header_right
+					display: block
+				
+				.menu 
+					li 
+						display: block
+						margin: 20px 0
+
+						a 
+							display: block
+
+				.header_right 
+					> div
+						margin: 0 10px 20px
+
+	.slider_big .owl-buttons 
+		div.owl-prev
+			left: 15px
+		div.owl-next
+			right: 15px
+
+
+	.slider_thum
+		margin-top: 0
+		.item_inner 
+			padding: 10px 0 0
+			.icon 
+				margin:
+					bottom: 10px
+				img
+					height: 22px
+			p
+				font:
+					size: 9px
+
+				span 
+					font-size: 6px
+					min-width: 20px
+
+	.home-notice-top 
+		.img-top
+			width: 100%
+
+		.caption-top
+			position: relative
+			z-index: 99
+			border: 2px solid $yellow
+			margin: -150px 5px 0
+			padding: 15px
+
+			.caption-top-inner 
+				background: #eef6f9
+				min-width: inherit
+
+			h3
+				font-size: 17px
+
+			span 
+				font-size: 10px
+
+			p 
+				font-size: 12px
+
+	.home-notice-bottom
+		margin: 20px 0 0
+
+		.inner-notice-child 
+			margin-bottom: 20px
+
+			.caption-child
+				padding: 10px
+
+	.slider-multimedia .multimedia-item.slick-center .inner
+		-webkit-transform: scale(1.1)
+		-moz-transform: scale(1.1)
+		transform: scale(1.1)
+
+	.home-eshop .slider-eshop .img img
+		margin-left: -140px
+
+	.slider-multimedia 
+		.slick-arrow
+			display: none !important
+
+		.multimedia-item .inner 
+			.caption 
+				h3
+					font-size: 10px
+					margin-bottom: 10px
+
+	.home-eshop .slider-eshop:before
+		width: 15%
+		right: 85%
+	#slide-eshop
+		margin-left: 7%
+
+	.footer
+		&_contact 
+			margin-top: 30px
+
+		&_top button[type="submit"]
+			width: 100%
+
+@media (max-width: 479px)
+	.home-notice-bottom .inner-notice-child .img-child
+		width: 100% 
+		float: none
+		img 
+			width: 100%
+
+	.home-talents 
+		.col-sm-6 
+			&:hover 
+				background: #f6fafc;
+
+	.box-talent-inner
+		margin-right: 0
+	
+	.box-talent .caption
+		+position(absolute, null -10px 10px null)
+		text-align: right
+		header 
+			margin-bottom: 10px 
+
+			h3 
+				font-size: 16px
+
+		p 
+			// display: none
+			margin-bottom: 10px
+	.home-eshop 
+		.slider-eshop
+			&:before
+				display: none
+			.img
+				display: none
+
+		.section_home-main
+			min-height: 457px
+
+@media (max-width: 359px)
+	.box-talent .caption
+		right: -10%
+		p 
+			display: none

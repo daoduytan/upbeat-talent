@@ -1,0 +1,55 @@
+// var 
+$yellow : #ffbe21
+$gray : #999
+$fontOpenSan: 'Open Sans', sans-serif
+$fontNotoSan: 'Noto Sans', sans-serif
+
+
+* 
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body 
+	font-family: $fontOpenSan
+
+a
+	&.read_more 
+		text-decoration: none
+		color: $gray
+		display: inline-block
+		font:
+			family: $fontNotoSan
+			size: 12px
+			style: italic
+
+		&:before 
+			content: ""
+			display: block 
+			+size(80% 2px)
+			margin-bottom: 5px
+			background: #999
+
+		&:after 
+			content: "\f105"
+			display: inline-block
+			margin-left: 3px
+			font:
+				family: FontAwesome
+				style: normal
+
+		&:hover 
+			color: $yellow
+
+			&:before 
+				background: $yellow
+
+.slick-slide 
+	&:focus, &:active 
+		outline: none 
+
+// xoas
+
+.section 
+	overflow: hidden
+
